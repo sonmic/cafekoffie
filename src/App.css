@@ -1,33 +1,71 @@
-.App {
+/* 
+font-family: 'Patrick Hand', cursive;
+font-family: 'Architects Daughter', cursive;
+font-family: 'Reenie Beanie', cursive;
+font-family: 'Pangolin', cursive;
+font-family: 'Sue Ellen Francisco', cursive; 
+font-family: 'Montserrat', sans-serif;
+*/
+
+body {
+  background-color: #eaede4;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 3px;
+  color: #665a50;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  background-color: #eaede4;
+}
+
+.footer {
+  background-color: #eaede4;
+}
+
+.left {
+  background-color: #eaede4;
+}
+
+.right {
+  background-color: #eaede4;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+img.cafe {
+  object-fit: fill !important;
+  width: 100%;
+  height: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media all and (min-width: 600px) {
+  .aside {
+    flex: 1 0;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media all and (min-width: 800px) {
+  .left {
+    order: 1;
+  }
+  .right {
+    order: 2;
+  }
+  .footer {
+    order: 4;
   }
 }
