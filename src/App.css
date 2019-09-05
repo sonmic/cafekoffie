@@ -44,12 +44,79 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+  justify-content: center;
 }
 
 img.cafe {
   object-fit: fill !important;
   width: 100%;
   height: auto;
+}
+img.windowBox {
+  object-fit: fill !important;
+  width: auto;
+  height: 100%;
+}
+
+.window {
+  justify-content: space-between;
+}
+.winBox {
+  background-size: cover;
+  background-position: 50%;
+  height: 180px;
+  width: 126px;
+}
+
+.shake {
+  -webkit-animation: shake 0.5s 0.0125s;
+  animation: shake 0.5s 0.0125s;
+}
+
+@-webkit-keyframes shake {
+  0%,
+  to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+
+  12.5%,
+  37.5%,
+  62.5%,
+  87.5% {
+    -webkit-transform: translate(-10px);
+    transform: translate(-10px);
+  }
+
+  25%,
+  50%,
+  75% {
+    -webkit-transform: translate(10px);
+    transform: translate(10px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+
+  12.5%,
+  37.5%,
+  62.5%,
+  87.5% {
+    -webkit-transform: translate(-10px);
+    transform: translate(-10px);
+  }
+
+  25%,
+  50%,
+  75% {
+    -webkit-transform: translate(10px);
+    transform: translate(10px);
+  }
 }
 
 @media all and (min-width: 600px) {
@@ -66,6 +133,18 @@ img.cafe {
     order: 2;
   }
   .footer {
-    order: 4;
+    order: 3;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .right {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1100px) {
+  .right {
+    width: 500px;
   }
 }

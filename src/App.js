@@ -17,6 +17,59 @@ import win14 from "./images/win14.png";
 import win15 from "./images/win15.png";
 
 function App() {
+  function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i + 1)); // random index from 0 to i
+
+      // swap elements array[i] and array[j]
+      // we use "destructuring assignment" syntax to achieve that
+      // you'll find more details about that syntax in later chapters
+      // same can be written as:
+      // let t = array[i]; array[i] = array[j]; array[j] = t
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+  }
+
+  const [clicked] = useState([]);
+  const [score, setScore] = useState(0);
+  const [topScore, setTopScore] = useState(0);
+  const [shake, setShake] = useState(false);
+  const [images] = useState([
+    win01,
+    win02,
+    win03,
+    win04,
+    win05,
+    win06,
+    win07,
+    win08,
+    win09,
+    win10,
+    win11,
+    win12,
+    win13,
+    win14,
+    win15
+  ]);
+
+  const updateScore = image => {
+    shuffle(images);
+
+    if (clicked.includes(image)) {
+      clicked.length = 0;
+      setScore(0);
+      setShake(true);
+    } else {
+      const newScore = score + 1;
+      setScore(newScore);
+      if (newScore > topScore) {
+        setTopScore(newScore);
+      }
+      clicked.push(image);
+      setShake(false);
+    }
+  };
+
   return (
     <div className="wrapper">
       <header className="header">Header</header>
@@ -26,13 +79,19 @@ function App() {
         <div className="subTitle">- CLICKY GAME -</div>
         <br />
         <div className="instruction01">
-          Click on an image to earn points, <br /> but don't click on any more
+          Click on a window to earn points, <br /> but don't click on any more
           than once!
         </div>
 
         <br />
 
-        <div className="instruction02">Click an image to begin!</div>
+        <div className="instruction02">
+          {topScore == 0
+            ? "Click an image to begin!"
+            : shake
+            ? "You guessed incorrectly!"
+            : "You guessed correctly!"}
+        </div>
         <br />
         <br />
         <br />
@@ -41,14 +100,17 @@ function App() {
         <br />
         <br />
         <br />
-        <div className="currentScore">SCORE : </div>
+        <div className="currentScore">SCORE : {score}</div>
         <br />
-        <div className="topScore">TOP SCORE : </div>
+        <div className="topScore">TOP SCORE : {topScore}</div>
       </div>
       <div className="aside right">
         <div className="topFloor"></div>
-
-        <div className="windows"></div>
+        <div className={"window" + (shake ? " shake" : "")}>
+          {images.map(image => (
+            <Windowimg key={image} url={image} onClick={updateScore} />
+          ))}
+        </div>
         <div className="cafe">
           <img className="cafe" src={require("./images/cafe.jpg")} />
         </div>
@@ -58,6 +120,10 @@ function App() {
       </footer>
     </div>
   );
+}
+
+function Windowimg({ url, onClick }) {
+  return <img className="winBox" src={url} onClick={() => onClick(url)} />;
 }
 
 export default App;
