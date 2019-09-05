@@ -94,9 +94,7 @@ function App() {
         </div>
         <br />
         <br />
-        <br />
-        <br />
-        <br />
+
         <br />
         <br />
         <br />

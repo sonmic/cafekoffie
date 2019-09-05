@@ -7,6 +7,15 @@ font-family: 'Sue Ellen Francisco', cursive;
 font-family: 'Montserrat', sans-serif;
 */
 
+/* html,
+body {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+} */
+
 body {
   background-color: #eaede4;
   font-family: "Montserrat", sans-serif;
@@ -47,24 +56,20 @@ body {
   justify-content: center;
 }
 
+img.windowBox,
 img.cafe {
-  object-fit: fill !important;
   width: 100%;
   height: auto;
-}
-img.windowBox {
-  object-fit: fill !important;
-  width: auto;
-  height: 100%;
 }
 
 .window {
   justify-content: space-between;
+  /* align-content: space-between; */
 }
 .winBox {
   background-size: cover;
   background-position: 50%;
-  height: 180px;
+  height: 150px;
   width: 126px;
 }
 
@@ -137,14 +142,23 @@ img.windowBox {
   }
 }
 
-@media only screen and (max-width: 800px) {
-  .right {
-    justify-content: space-between;
-  }
-}
-
 @media (min-width: 1100px) {
   .right {
     width: 500px;
+  }
+  .window {
+    width: 650px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .right {
+    justify-content: space-between;
+  }
+  img.winBox {
+    background-size: cover;
+    background-position: 50%;
+    height: 120px;
+    width: 70px;
   }
 }
