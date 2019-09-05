@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/cafekoffie/static/css/main.9ad5b3eb.chunk.css",
+    "main.js": "/cafekoffie/static/js/main.59ac79cd.chunk.js",
+    "main.js.map": "/cafekoffie/static/js/main.59ac79cd.chunk.js.map",
+    "runtime~main.js": "/cafekoffie/static/js/runtime~main.a32d8e5b.js",
+    "runtime~main.js.map": "/cafekoffie/static/js/runtime~main.a32d8e5b.js.map",
+    "static/js/2.63dd7bd8.chunk.js": "/cafekoffie/static/js/2.63dd7bd8.chunk.js",
+    "static/js/2.63dd7bd8.chunk.js.map": "/cafekoffie/static/js/2.63dd7bd8.chunk.js.map",
+    "index.html": "/cafekoffie/index.html",
+    "precache-manifest.e6d4e2ea788b3dcbfef01e45dd0c4a58.js": "/cafekoffie/precache-manifest.e6d4e2ea788b3dcbfef01e45dd0c4a58.js",
+    "service-worker.js": "/cafekoffie/service-worker.js",
+    "static/css/main.9ad5b3eb.chunk.css.map": "/cafekoffie/static/css/main.9ad5b3eb.chunk.css.map",
+    "static/media/cafe.jpg": "/cafekoffie/static/media/cafe.0ee38700.jpg",
+    "static/media/win01.png": "/cafekoffie/static/media/win01.f91ac367.png"
+  }
+}
