@@ -18,6 +18,8 @@ import win15 from "./images/win15.png";
 import { ArcTitle } from "./ArcTitle";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Switch from "@material-ui/core/Switch";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faVolumeUp } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   function shuffle(array) {
@@ -76,17 +78,20 @@ function App() {
 
   return (
     <div className="wrapper">
-      <FormControlLabel
-        control={
-          <Switch
-            checked={sound}
-            onChange={() => setSound(!sound)}
-            color="primary"
-          />
-        }
-        label="SOUND"
-      />
-      {/* <header className="header">Header</header> */}
+      <header className="header">
+        <FontAwesomeIcon icon={faVolumeUp} />
+        &nbsp;
+        <FormControlLabel
+          control={
+            <Switch
+              checked={sound}
+              onChange={() => setSound(!sound)}
+              color="primary"
+            />
+          }
+          label=""
+        />
+      </header>
       <div className="aside left">
         <ArcTitle>CAFÉ KOFFIE</ArcTitle>
         <br />
@@ -112,9 +117,15 @@ function App() {
         <br />
         <br />
         <br />
-        <div className="currentScore">SCORE : {score}</div>
+        <div className="currentScoreBox">
+          <span className="scoretext">SCORE :</span>
+          <div className="currentScore scoreNum">{score}</div>
+        </div>
         <br />
-        <div className="topScore">TOP SCORE : {topScore}</div>
+        <div className="topScoreBox">
+          <span className="scoretext">TOP SCORE :</span>
+          <div className="topScore scoreNum">{topScore}</div>
+        </div>
       </div>
       <div className="aside right">
         <div className={"window" + (shake ? " shake" : "")}>
@@ -128,6 +139,9 @@ function App() {
       </div>
       <footer className="footer">
         <div className="copyrightContainer">
+          <div className="copyrightLeft">Developer &nbsp;</div>
+          <div className="copyrightRight">Sonmi Kos</div>
+          <span className="collaboration">X</span>
           <div className="copyrightLeft">Illustration by&nbsp;&nbsp;</div>
           <div className="copyrightRight">Anne Olde Kalter</div>
         </div>

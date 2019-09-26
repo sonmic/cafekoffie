@@ -19,6 +19,18 @@ font-family: 'Vibur', cursive;
 font-family: 'Patrick Hand SC', cursive;
  */
 
+/* For the score number
+font-family: 'Raleway', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Vollkorn', serif;
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Martel', serif;
+  */
+
+.scoreNum {
+  font-family: "Martel", serif;
+  font-size: 50px;
+}
 .title {
   font-size: 50px;
   font-family: "Patrick Hand SC", cursive;
@@ -54,6 +66,10 @@ body {
   flex: 1 100%;
 }
 
+.collaboration {
+  padding-left: 2%;
+  padding-right: 2%;
+}
 .copyrightContainer {
   display: flex;
   justify-content: flex-end;
