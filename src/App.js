@@ -86,11 +86,11 @@ function App() {
         }
         label="SOUND"
       />
-      <header className="header">Header</header>
+      {/* <header className="header">Header</header> */}
       <div className="aside left">
         <ArcTitle>CAFÉ KOFFIE</ArcTitle>
         <br />
-        <div className="subTitle">- CLICKY GAME -</div>
+        <div className="subTitle">- Clicky Game -</div>
         <br />
         <div className="instruction01">
           Click on a window to earn points, <br /> but don't click on any more
@@ -117,7 +117,6 @@ function App() {
         <div className="topScore">TOP SCORE : {topScore}</div>
       </div>
       <div className="aside right">
-        <div className="topFloor"></div>
         <div className={"window" + (shake ? " shake" : "")}>
           {images.map(image => (
             <Windowimg key={image} url={image} onClick={updateScore} />
@@ -128,7 +127,10 @@ function App() {
         </div>
       </div>
       <footer className="footer">
-        <div className="copyright">Illustration by Anne Olde Kalter</div>
+        <div className="copyrightContainer">
+          <div className="copyrightLeft">Illustration by&nbsp;&nbsp;</div>
+          <div className="copyrightRight">Anne Olde Kalter</div>
+        </div>
       </footer>
     </div>
   );

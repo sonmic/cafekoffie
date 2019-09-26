@@ -1,11 +1,28 @@
 /* 
 font-family: 'Patrick Hand', cursive;
-font-family: 'Architects Daughter', cursive;
 font-family: 'Reenie Beanie', cursive;
 font-family: 'Pangolin', cursive;
-font-family: 'Sue Ellen Francisco', cursive; 
+font-family: 'Sorts Mill Goudy', serif;
 font-family: 'Montserrat', sans-serif;
 */
+
+/* For sub title
+font-family: 'Source Serif Pro', serif;
+font-family: 'El Messiri', sans-serif;
+*/
+
+/* For .title
+font-family: 'Gidugu', sans-serif;
+font-family: 'Jacques Francois Shadow', cursive;
+font-family: 'Overpass Mono', monospace;
+font-family: 'Vibur', cursive;
+font-family: 'Patrick Hand SC', cursive;
+ */
+
+.title {
+  font-size: 50px;
+  font-family: "Patrick Hand SC", cursive;
+}
 
 /* html,
 body {
@@ -19,28 +36,53 @@ body {
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #eaede4;
-  letter-spacing: 3px;
+  /* letter-spacing: 3px; */
   color: #665a50;
 }
 
 .wrapper {
   display: flex;
   flex-flow: row wrap;
-  font-weight: bold;
+  /* font-weight: bold; */
   text-align: center;
+  /* text-transform: uppercase; */
+  height: 100vh;
 }
 
 .wrapper > * {
-  padding: 10px;
+  /* padding: 10px; */
   flex: 1 100%;
 }
 
-.footer {
-  text-align: right;
+.copyrightContainer {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #fcf5ea;
+  color: #000;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-right: 2%;
+}
+.copyrightRight {
+  text-transform: uppercase;
+}
+.copyrightLeft,
+.instruction01 {
+  font-family: "Sorts Mill Goudy", Sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+.copyrightLeft {
+  font-style: oblique;
 }
 
-.copyright {
-  padding-right: 5%;
+.footer {
+  /* display: flex; */
+  /* justify-content: flex-end; */
+  text-align: right;
+  padding: 0px;
+  background-color: #fcf5ea;
 }
 
 .right {
@@ -49,6 +91,7 @@ body {
   flex-wrap: wrap;
   width: 100%;
   justify-content: center;
+  padding: 10px;
 }
 
 img.windowBox,
@@ -158,18 +201,19 @@ img.cafe {
   }
 }
 
-.title {
-  font-size: 50px;
-}
-
 .subTitle {
   font-size: 20px;
+  font-family: "Oleo Script", cursive;
 }
 
 .MuiSwitch-track {
-  background-color: #ffffff !important;
+  background-color: #b7c5ae !important;
 }
 
 .MuiSwitch-switchBase {
-  color: #fff !important;
+  color: #fef6eb !important;
+}
+
+.MuiTypography-body1 {
+  font-family: "Montserrat", sans-serif !important;
 }
