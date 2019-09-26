@@ -78,7 +78,7 @@ function App() {
 
   return (
     <div className="wrapper">
-      <header className="header">
+      {/* <header className="header">
         <FontAwesomeIcon icon={faVolumeUp} />
         &nbsp;
         <FormControlLabel
@@ -91,7 +91,7 @@ function App() {
           }
           label=""
         />
-      </header>
+      </header> */}
       <div className="aside left">
         <ArcTitle>CAFÉ KOFFIE</ArcTitle>
         <br />
@@ -101,9 +101,6 @@ function App() {
           Click on a window to earn points, <br /> but don't click on any more
           than once!
         </div>
-
-        <br />
-
         <div className="instruction02">
           {topScore == 0
             ? "Click an image to begin!"
@@ -111,12 +108,6 @@ function App() {
             ? "You guessed incorrectly!"
             : "You guessed correctly!"}
         </div>
-        <br />
-        <br />
-
-        <br />
-        <br />
-        <br />
         <div className="currentScoreBox">
           <span className="scoretext">SCORE :</span>
           <div className="currentScore scoreNum">{score}</div>
@@ -138,6 +129,20 @@ function App() {
         </div>
       </div>
       <footer className="footer">
+        <div className="soundToggle">
+          <FontAwesomeIcon icon={faVolumeUp} />
+          &nbsp;
+          <FormControlLabel
+            label=""
+            control={
+              <Switch
+                checked={sound}
+                onChange={() => setSound(!sound)}
+                color="primary"
+              />
+            }
+          />
+        </div>
         <div className="copyrightContainer">
           <div className="copyrightLeft">Developer &nbsp;</div>
           <div className="copyrightRight">Sonmi Kos</div>

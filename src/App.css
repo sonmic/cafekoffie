@@ -20,9 +20,7 @@ font-family: 'Patrick Hand SC', cursive;
  */
 
 /* For the score number
-font-family: 'Raleway', sans-serif;
 font-family: 'Merriweather', serif;
-font-family: 'Vollkorn', serif;
 font-family: 'Cormorant Garamond', serif;
 font-family: 'Martel', serif;
   */
@@ -70,7 +68,16 @@ body {
   padding-left: 2%;
   padding-right: 2%;
 }
+.soundToggle {
+  width: 30%;
+  justify-content: flex-start;
+  float: left;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+}
 .copyrightContainer {
+  width: 70%;
   display: flex;
   justify-content: flex-end;
   background-color: #fcf5ea;
@@ -94,8 +101,9 @@ body {
 }
 
 .footer {
-  /* display: flex; */
-  /* justify-content: flex-end; */
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
   text-align: right;
   padding: 0px;
   background-color: #fcf5ea;
@@ -217,9 +225,39 @@ img.cafe {
   }
 }
 
+.instruction02,
+.subTitle {
+  font-family: "Oleo Script", cursive;
+}
+
+.instruction02 {
+  font-size: 30px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  color: #c2ac50;
+  animation: blinkingText 2.4s infinite;
+}
+
+@keyframes blinkingText {
+  0% {
+    color: transparent;
+  }
+  49% {
+    color: #c7ba85;
+  }
+  50% {
+    color: #ccbc79;
+  }
+  99% {
+    color: #c0ae64;
+  }
+  100% {
+    color: #ccbc79;
+  }
+}
+
 .subTitle {
   font-size: 20px;
-  font-family: "Oleo Script", cursive;
 }
 
 .MuiSwitch-track {
