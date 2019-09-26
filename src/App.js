@@ -15,6 +15,9 @@ import win12 from "./images/win12.png";
 import win13 from "./images/win13.png";
 import win14 from "./images/win14.png";
 import win15 from "./images/win15.png";
+import { ArcTitle } from "./ArcTitle";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
+import Switch from "@material-ui/core/Switch";
 
 function App() {
   function shuffle(array) {
@@ -69,12 +72,23 @@ function App() {
       setShake(false);
     }
   };
+  const [sound, setSound] = useState(true);
 
   return (
     <div className="wrapper">
+      <FormControlLabel
+        control={
+          <Switch
+            checked={sound}
+            onChange={() => setSound(!sound)}
+            color="primary"
+          />
+        }
+        label="SOUND"
+      />
       <header className="header">Header</header>
       <div className="aside left">
-        <div className="title">CAFÉ KOFFIE</div>
+        <ArcTitle>CAFÉ KOFFIE</ArcTitle>
         <br />
         <div className="subTitle">- CLICKY GAME -</div>
         <br />
@@ -114,7 +128,7 @@ function App() {
         </div>
       </div>
       <footer className="footer">
-        <div className="copyright">Footer</div>
+        <div className="copyright">Illustration by Anne Olde Kalter</div>
       </footer>
     </div>
   );
