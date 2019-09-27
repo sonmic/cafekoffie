@@ -49,7 +49,19 @@ body {
   /* letter-spacing: 3px; */
   color: #665a50;
 }
-
+.scoreText {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.scoreBox {
+  display: flex;
+  justify-content: center;
+}
+hr {
+  width: 20%;
+}
 .wrapper {
   display: flex;
   flex-flow: row wrap;
@@ -113,26 +125,31 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
+  /* width: 100%; */
   justify-content: center;
   padding: 10px;
+  text-align: center;
 }
 
 img.windowBox,
 img.cafe {
-  width: 100%;
-  height: auto;
+  /* width: 100%;
+  height: auto; */
 }
 
+.cafe {
+  height: 200px;
+  width: 520px;
+}
 .window {
-  justify-content: space-between;
-  /* align-content: space-between; */
+  margin: auto;
+  position: relative;
 }
 .winBox {
   background-size: cover;
   background-position: 50%;
-  height: 150px;
-  width: 126px;
+  height: 130px;
+  width: 110px;
 }
 
 .shake {
@@ -186,45 +203,6 @@ img.cafe {
   }
 }
 
-@media all and (min-width: 600px) {
-  .aside {
-    flex: 1 0;
-  }
-}
-
-@media all and (min-width: 800px) {
-  .left {
-    order: 1;
-  }
-  .right {
-    order: 2;
-  }
-  .footer {
-    order: 3;
-  }
-}
-
-@media (min-width: 1100px) {
-  .right {
-    width: 500px;
-  }
-  .window {
-    width: 650px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .right {
-    justify-content: space-between;
-  }
-  img.winBox {
-    background-size: cover;
-    background-position: 50%;
-    height: 120px;
-    width: 70px;
-  }
-}
-
 .instruction02,
 .subTitle {
   font-family: "Oleo Script", cursive;
@@ -236,6 +214,10 @@ img.cafe {
   padding-bottom: 5%;
   color: #c2ac50;
   animation: blinkingText 2.4s infinite;
+}
+
+.aside {
+  margin: auto;
 }
 
 @keyframes blinkingText {
@@ -270,4 +252,73 @@ img.cafe {
 
 .MuiTypography-body1 {
   font-family: "Montserrat", sans-serif !important;
+}
+
+@media all and (min-width: 800px) {
+  .left {
+    order: 1;
+  }
+  .right {
+    order: 2;
+  }
+  .footer {
+    order: 3;
+  }
+}
+
+@media (min-width: 1100px) {
+  .right {
+    width: 650px;
+  }
+  .window {
+    width: 650px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .right {
+    justify-content: space-between;
+  }
+  img.winBox {
+    background-size: cover;
+    background-position: 50%;
+    height: 130px;
+    width: 90px;
+  }
+  .cafe {
+    height: 200px;
+    width: 425px;
+    margin: auto;
+  }
+  .right {
+    width: 500px;
+  }
+  .window {
+    width: 500px;
+  }
+}
+
+@media all and (min-width: 600px) {
+  .aside {
+    flex: 1 0;
+  }
+  .right {
+    width: 450px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .left {
+    width: 100% !important;
+  }
+  .right {
+    justify-content: space-between;
+  }
+  img.winBox {
+    background-size: cover;
+    background-position: 50%;
+    height: 120px;
+    width: 90px;
+    padding: 0px;
+  }
 }

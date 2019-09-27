@@ -108,13 +108,14 @@ function App() {
             ? "You guessed incorrectly!"
             : "You guessed correctly!"}
         </div>
-        <div className="currentScoreBox">
-          <span className="scoretext">SCORE :</span>
+        <div className="currentScoreBox scoreBox">
+          <div className="scoreText">SCORE :</div>
           <div className="currentScore scoreNum">{score}</div>
         </div>
+        <hr />
         <br />
-        <div className="topScoreBox">
-          <span className="scoretext">TOP SCORE :</span>
+        <div className="topScoreBox scoreBox">
+          <div className="scoreText">TOP SCORE :</div>
           <div className="topScore scoreNum">{topScore}</div>
         </div>
       </div>
