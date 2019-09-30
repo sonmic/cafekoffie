@@ -113,7 +113,6 @@ hr {
 }
 
 .footer {
-  width: 100%;
   display: flex;
   justify-content: flex-end;
   text-align: right;
@@ -125,7 +124,6 @@ hr {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* width: 100%; */
   justify-content: center;
   padding: 10px;
   text-align: center;
