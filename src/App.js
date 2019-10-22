@@ -95,7 +95,7 @@ function App() {
       <div className="aside left">
         <ArcTitle>CAFÉ KOFFIE</ArcTitle>
         <br />
-        <div className="subTitle">- Clicky Game -</div>
+        <div className="subTitle">- Memory Game -</div>
         <br />
         <div className="instruction01">
           Click on a window to earn points, <br /> but don't click on any more
