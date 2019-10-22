@@ -35,13 +35,13 @@ font-family: 'Martel', serif;
 }
 
 /* html,
-  body {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  } */
+    body {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    } */
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -132,7 +132,7 @@ hr {
 img.windowBox,
 img.cafe {
   /* width: 100%;
-    height: auto; */
+      height: auto; */
 }
 
 .cafe {

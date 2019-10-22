@@ -35,6 +35,20 @@ function App() {
     }
   }
 
+  //from line 39: lazy initial state: https://reactjs.org/docs/hooks-reference.html#lazy-initial-state
+  const [winSound] = useState(() => {
+    const audio = new Audio();
+    audio.src = "win.m4a";
+    return audio;
+  });
+
+  const [loseSound] = useState(() => {
+    const audio = new Audio();
+    audio.src = "lose.wav";
+    return audio;
+  });
+
+  console.log("Render");
   const [clicked] = useState([]);
   const [score, setScore] = useState(0);
   const [topScore, setTopScore] = useState(0);
@@ -64,6 +78,7 @@ function App() {
       clicked.length = 0;
       setScore(0);
       setShake(true);
+      loseSound.play();
     } else {
       const newScore = score + 1;
       setScore(newScore);
@@ -72,6 +87,7 @@ function App() {
       }
       clicked.push(image);
       setShake(false);
+      winSound.play();
     }
   };
   const [sound, setSound] = useState(true);
@@ -108,15 +124,18 @@ function App() {
             ? "You guessed incorrectly!"
             : "You guessed correctly!"}
         </div>
-        <div className="currentScoreBox scoreBox">
-          <div className="scoreText">SCORE :</div>
-          <div className="currentScore scoreNum">{score}</div>
-        </div>
-        <hr />
-        <br />
-        <div className="topScoreBox scoreBox">
-          <div className="scoreText">TOP SCORE :</div>
-          <div className="topScore scoreNum">{topScore}</div>
+        <div className="scoreParentBox">
+          <div className="currentScoreBox scoreBox">
+            <div className="scoreText">SCORE :</div>
+            <div className="currentScore scoreNum">{score}</div>
+          </div>
+
+          <hr />
+          <br />
+          <div className="topScoreBox scoreBox">
+            <div className="scoreText">TOP SCORE :</div>
+            <div className="topScore scoreNum">{topScore}</div>
+          </div>
         </div>
       </div>
       <div className="aside right">
@@ -138,7 +157,10 @@ function App() {
             control={
               <Switch
                 checked={sound}
-                onChange={() => setSound(!sound)}
+                onChange={() => {
+                  setSound(!sound);
+                  winSound.muted = loseSound.muted = sound;
+                }}
                 color="primary"
               />
             }
