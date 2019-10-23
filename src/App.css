@@ -137,7 +137,8 @@ img.cafe {
 
 .cafe {
   height: 200px;
-  width: 520px;
+  max-width: 520px;
+  width: 100%;
   margin: auto;
   position: relative;
 }
@@ -275,7 +276,7 @@ img.cafe {
   }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1100px) and (min-width: 600px) {
   .right {
     justify-content: space-between;
   }
@@ -310,9 +311,24 @@ img.cafe {
   }
 }
 
+@media only screen and (max-width: 800px) {
+  .title {
+    font-size: 40px;
+  }
+  .instruction01 {
+    font-size: 14px;
+  }
+  .instruction02 {
+    font-size: 25px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
+  .wrapper {
+    display: block;
+  }
   .left {
-    width: 100% !important;
+    width: 50% !important;
   }
   .right {
     justify-content: space-between;
@@ -325,6 +341,14 @@ img.cafe {
     padding: 0px;
   }
   .right {
-    padding: 0px;
+    padding: 0px !important;
+  }
+  .copyrightRight,
+  .copyrightLeft {
+    font-size: 13px;
+  }
+
+  .copyrightContainer {
+    padding-right: 0% !important;
   }
 }

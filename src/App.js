@@ -48,7 +48,6 @@ function App() {
     return audio;
   });
 
-  console.log("Render");
   const [clicked] = useState([]);
   const [score, setScore] = useState(0);
   const [topScore, setTopScore] = useState(0);
