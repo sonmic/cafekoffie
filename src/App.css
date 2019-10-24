@@ -98,6 +98,10 @@ hr {
   padding-bottom: 2%;
   padding-right: 2%;
 }
+.copyrightLeftContainer,
+.copyrightRightContainer {
+  display: flex;
+}
 .copyrightRight {
   text-transform: uppercase;
 }
@@ -110,6 +114,7 @@ hr {
 }
 .copyrightLeft {
   font-style: oblique;
+  padding-right: 4%;
 }
 
 .footer {
@@ -280,12 +285,18 @@ img.cafe {
   .right {
     justify-content: space-between;
   }
-  img.winBox {
+  /* img.winBox {
     background-size: cover;
     background-position: 50%;
     height: 130px;
     width: 90px;
+  } */
+
+  img.winBox {
+    height: 130px;
+    width: 85px;
   }
+
   .cafe {
     height: 200px;
     width: 410px;
@@ -337,7 +348,7 @@ img.cafe {
     background-size: cover;
     background-position: 50%;
     height: 100px;
-    width: 80px;
+    width: 75px;
     padding: 0px;
   }
   .right {
@@ -345,10 +356,20 @@ img.cafe {
   }
   .copyrightRight,
   .copyrightLeft {
-    font-size: 13px;
+    font-size: 12px;
+    text-align: right !important;
   }
 
   .copyrightContainer {
     padding-right: 0% !important;
+  }
+  .copyrightLeftContainer,
+  .copyrightRightContainer {
+    display: block;
+    padding-left: 1% !important;
+    padding-right: 3% !important;
+  }
+  .collaboration {
+    padding-top: 3%;
   }
 }

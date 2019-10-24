@@ -166,11 +166,17 @@ function App() {
           />
         </div>
         <div className="copyrightContainer">
-          <div className="copyrightLeft">Developer &nbsp;</div>
-          <div className="copyrightRight">Sonmi Kos</div>
+          <div className="copyrightLeftContainer">
+            {" "}
+            <div className="copyrightLeft">Developer</div>
+            <div className="copyrightRight">Sonmi Kos</div>
+          </div>
           <span className="collaboration">X</span>
-          <div className="copyrightLeft">Illustration by&nbsp;&nbsp;</div>
-          <div className="copyrightRight">Anne Olde Kalter</div>
+
+          <div className="copyrightRightContainer">
+            <div className="copyrightLeft">Illustration by</div>
+            <div className="copyrightRight">Anne Olde Kalter</div>
+          </div>
         </div>
       </footer>
     </div>
