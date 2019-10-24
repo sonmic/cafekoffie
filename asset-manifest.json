@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/cafekoffie/static/css/main.b1b7d394.chunk.css",
+    "main.css": "/cafekoffie/static/css/main.85354998.chunk.css",
     "main.js": "/cafekoffie/static/js/main.788e4ad8.chunk.js",
     "main.js.map": "/cafekoffie/static/js/main.788e4ad8.chunk.js.map",
     "runtime~main.js": "/cafekoffie/static/js/runtime~main.a32d8e5b.js",
@@ -8,9 +8,9 @@
     "static/js/2.eb5be8d0.chunk.js": "/cafekoffie/static/js/2.eb5be8d0.chunk.js",
     "static/js/2.eb5be8d0.chunk.js.map": "/cafekoffie/static/js/2.eb5be8d0.chunk.js.map",
     "index.html": "/cafekoffie/index.html",
-    "precache-manifest.9de559e605475ea52dcc831adafed065.js": "/cafekoffie/precache-manifest.9de559e605475ea52dcc831adafed065.js",
+    "precache-manifest.70053a0644053c762f76b647a5ff50c7.js": "/cafekoffie/precache-manifest.70053a0644053c762f76b647a5ff50c7.js",
     "service-worker.js": "/cafekoffie/service-worker.js",
-    "static/css/main.b1b7d394.chunk.css.map": "/cafekoffie/static/css/main.b1b7d394.chunk.css.map",
+    "static/css/main.85354998.chunk.css.map": "/cafekoffie/static/css/main.85354998.chunk.css.map",
     "static/media/cafe.jpg": "/cafekoffie/static/media/cafe.0ee38700.jpg",
     "static/media/win01.png": "/cafekoffie/static/media/win01.cb1c3e0b.png"
   }
