@@ -30,6 +30,9 @@ font-family: 'Martel', serif;
   font-size: 17px;
 }
 
+.scoreSlash {
+  display: none;
+}
 .scoreText {
   font-family: "Oleo Script", cursive;
 }
@@ -88,6 +91,7 @@ body {
   flex-direction: column;
   text-align: center;
   padding-right: 1%;
+  white-space: nowrap;
 }
 .scoreBox {
   display: flex;
@@ -140,7 +144,7 @@ hr {
   text-transform: uppercase;
   font-size: 14px;
 }
-.copyrightLeft,
+.copyrightLeft
 /* .instruction01  */
  {
   font-family: "Sorts Mill Goudy", Sans-serif;
@@ -413,5 +417,33 @@ img.cafe {
 
   .cafe {
     height: unset;
+  }
+
+  .scoreParentBox {
+    display: flex;
+    margin: auto !important;
+    justify-content: center;
+  }
+
+  .scoreLine {
+    display: none;
+  }
+
+  .scoreSlash {
+    display: inline;
+    background-size: 50%;
+    width: 5%;
+    margin: 15px 15px 0px 15px;
+    height: 50px;
+    background: linear-gradient(
+      to top left,
+      #eaede4 calc(50% - 1px),
+      #aaa,
+      #eaede4 calc(50% + 1px)
+    );
+  }
+
+  .instruction02 {
+    padding-bottom: 0%;
   }
 }

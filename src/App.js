@@ -127,7 +127,8 @@ function App() {
             <div className="currentScore scoreNum">{score}</div>
           </div>
 
-          <hr />
+          <hr className="scoreLine" />
+          <div className="scoreSlash"></div>
           <div className="topScoreBox scoreBox">
             <div className="scoreText">TOP SCORE :</div>
             <div className="topScore scoreNum">{topScore}</div>
