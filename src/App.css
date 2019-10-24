@@ -104,6 +104,7 @@ hr {
 }
 .copyrightRight {
   text-transform: uppercase;
+  font-size: 14px;
 }
 .copyrightLeft,
 .instruction01 {
@@ -115,6 +116,7 @@ hr {
 .copyrightLeft {
   font-style: oblique;
   padding-right: 4%;
+  white-space: nowrap;
 }
 
 .footer {
@@ -371,5 +373,9 @@ img.cafe {
   }
   .collaboration {
     padding-top: 3%;
+  }
+
+  .cafe {
+    height: unset;
   }
 }
