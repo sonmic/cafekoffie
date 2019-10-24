@@ -109,9 +109,7 @@ function App() {
       </header> */}
       <div className="aside left">
         <ArcTitle>CAFÉ KOFFIE</ArcTitle>
-        <br />
         <div className="subTitle">- Memory Game -</div>
-        <br />
         <div className="instruction01">
           Click on a window to earn points, <br /> but don't click on any more
           than once!
@@ -130,7 +128,6 @@ function App() {
           </div>
 
           <hr />
-          <br />
           <div className="topScoreBox scoreBox">
             <div className="scoreText">TOP SCORE :</div>
             <div className="topScore scoreNum">{topScore}</div>
@@ -147,6 +144,7 @@ function App() {
           <img className="cafe" src={require("./images/cafe.jpg")} />
         </div>
       </div>
+
       <footer className="footer">
         <div className="soundToggle">
           <FontAwesomeIcon icon={faVolumeUp} />
@@ -179,6 +177,9 @@ function App() {
           </div>
         </div>
       </footer>
+      <div className="mask">
+        <div id="timeup">Time is up!</div>
+      </div>
     </div>
   );
 }
