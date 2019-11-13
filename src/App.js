@@ -171,11 +171,12 @@ function App() {
             <div className="copyrightRight">Sonmi Kos</div>
           </div>
           <span className="collaboration">X</span>
-
-          <div className="copyrightRightContainer">
-            <div className="copyrightLeft">Illustration by</div>
-            <div className="copyrightRight">Anne Olde Kalter</div>
-          </div>
+          <a href={"http://anneoldekalter.com/"} target="_blank">
+            <div className="copyrightRightContainer">
+              <div className="copyrightLeft">Illustration by</div>
+              <div className="copyrightRight">Anne Olde Kalter</div>
+            </div>
+          </a>
         </div>
       </footer>
       <div className="mask">
