@@ -429,7 +429,10 @@ img.cafe {
     display: none;
   }
 
-  .scoreSlash {
+  .currentScoreBox {
+    padding-right: 10% !important;
+  }
+  /* .scoreSlash {
     display: inline;
     background-size: 50%;
     width: 5%;
@@ -441,7 +444,7 @@ img.cafe {
       #aaa,
       #eaede4 calc(50% + 1px)
     );
-  }
+  } */
 
   .instruction02 {
     padding-bottom: 0%;
