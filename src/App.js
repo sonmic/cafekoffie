@@ -168,15 +168,18 @@ function App() {
           <div className="copyrightLeftContainer">
             {" "}
             <div className="copyrightLeft">Developer</div>
-            <div className="copyrightRight">Sonmi Kos</div>
+            <a href={"https://sonmic.github.io/"} target="_blank">
+              <div className="copyrightRight">Sonmi Kos</div>
+            </a>
           </div>
           <span className="collaboration">X</span>
-          <a href={"http://anneoldekalter.com/"} target="_blank">
-            <div className="copyrightRightContainer">
-              <div className="copyrightLeft">Illustration by</div>
+
+          <div className="copyrightRightContainer">
+            <div className="copyrightLeft">Illustration by</div>
+            <a href={"http://anneoldekalter.com/"} target="_blank">
               <div className="copyrightRight">Anne Olde Kalter</div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
       </footer>
       <div className="mask">
