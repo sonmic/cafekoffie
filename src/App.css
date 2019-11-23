@@ -45,15 +45,6 @@ font-family: 'Martel', serif;
   font-family: "Patrick Hand SC", cursive;
 }
 
-/* html,
-    body {
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-    } */
-
 #timeup,
 h1 {
   font-family: "Marcellus SC", serif;
@@ -167,18 +158,11 @@ hr {
 }
 
 .right {
-  /* display: flex; */
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   padding: 10px;
   text-align: center;
-}
-
-img.windowBox,
-img.cafe {
-  /* width: 100%;
-      height: auto; */
 }
 
 .cafe {
